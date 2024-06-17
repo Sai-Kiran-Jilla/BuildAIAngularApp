@@ -1,0 +1,6 @@
+<form (ngSubmit)="onSubmit()">
+    <input type="text" [(ngModel)]="entryValue" name="entryValue" required>
+    <button type="submit">Upload</button>
+  </form>
+  <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+  
